@@ -9,6 +9,18 @@ const scrollHeader = () =>{
         : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-/*========================================  ========================================*/
+/*======================================== Swiper JS ========================================*/
+var swiperPopular = new Swiper(".popular_container", {
+    spanceBetween:32,
+    grabCursor: true,
+    centeredSliders: true,
+    slidersPerView: 'auto',
+    loop: true,
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 /*========================================  ========================================*/
 
