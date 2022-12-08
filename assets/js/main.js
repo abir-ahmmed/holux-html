@@ -109,5 +109,19 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*========================================  ========================================*/
 
+/*================== Scroll Reveal Animation ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  //reset:true
+})
+
+sr.reveal('.home_title')
+sr.reveal('.home_description', {delay:500})
+sr.reveal('.home_search', {delay:600})
+sr.reveal('.home_value', {delay:700})
+sr.reveal('.home_images', {delay:800, origin:'bottom'})
+sr.reveal('.home_img', {interval:100})
