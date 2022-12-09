@@ -144,7 +144,7 @@ Color changes in some parts of the website, in dark theme
     box-shadow: none;
 }
 
-.dark-theme .home_search-input,
+
 .dark-theme .value_orbe,
 .dark-theme .value_accordion-icon,
 .dark-theme .value_accordion-arrow,
@@ -153,6 +153,11 @@ Color changes in some parts of the website, in dark theme
 .dark-theme .subscribe_container,
 .dark-theme .contact_orbe{
     background-color: var(--container-color);
+}
+
+
+.dark-theme .home_search-input{
+    background: transparent;
 }
 
 .dark-theme .subscribe_container{

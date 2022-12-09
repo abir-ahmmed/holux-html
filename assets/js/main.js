@@ -21,7 +21,21 @@ var swiperPopular = new Swiper(".popular_container", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+  },
+
   });
+
 /*======================================== Value JS ========================================*/
 const accordionItems = document.querySelectorAll ('.value_accordion-item')
 
@@ -119,9 +133,11 @@ const sr = ScrollReveal({
   //reset:true
 })
 
-sr.reveal('.home_title')
-sr.reveal('.home_description', {delay:500})
+sr.reveal('.home_title, .popular_container, .subscribe_container, .footer_container, .logos_container')
+sr.reveal('.home_description, .footer_info', {delay:500})
 sr.reveal('.home_search', {delay:600})
 sr.reveal('.home_value', {delay:700})
 sr.reveal('.home_images', {delay:800, origin:'bottom'})
 sr.reveal('.home_img', {interval:100})
+sr.reveal('.value_images, .contact_content', {origin:'left'})
+sr.reveal('.value_content, .contact_images', {origin:'right'})
