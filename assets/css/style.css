@@ -922,6 +922,7 @@ Color changes in some parts of the website, in dark theme
         grid-template-columns: repeat(1,180px);
         justify-content: center;
     }
+    
 }
 
 @media screen and (max-width:320px) {
@@ -970,6 +971,13 @@ Color changes in some parts of the website, in dark theme
 
     .footer_content{
         gap: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    .value_data .section_subtitle{
+        padding-top: 2rem;
     }
 }
 
